@@ -1,5 +1,5 @@
 def merge_sort(arr, low, high):
-    """Program for insertion sort
+    """Program for merge sort
         Inplace sorting
         Space Complexity O(n)   a temporary array of linear size is used
         for each sub problem in merge setp
@@ -41,7 +41,7 @@ def merge(arr, low, mid, high):
 # Simpler implementation for python
 
 def merge_sort(array):
-    """Program for insertion sort
+    """Program for merge sort
     Inplace sorting
     Space Complexity O(n)   a temporary array of linear size is used
     for each sub problem in merge setp
