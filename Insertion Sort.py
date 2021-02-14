@@ -10,6 +10,7 @@ def insertion_sort(array):
     >>> print(arr)
     [-3, 0, 0, 1, 1, 2, 5, 5, 7, 9]
     """
+    
     for j in range(1, len(array)):
         key = array[j]
         # Insert array[j] into the sorted sequence array[0.. j-1]
