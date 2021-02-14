@@ -25,4 +25,4 @@ arr = [1, 5, 0, -3, 5, 7, 2, 0, 9, 1]
 print(arr)
 insertion_sort(arr)
 print(arr)
-insertion_sort()
+
