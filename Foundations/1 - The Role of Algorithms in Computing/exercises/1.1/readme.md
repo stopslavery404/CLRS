@@ -10,7 +10,7 @@
 
 > **_2. Other than speed, what other measures of efficiency might one use in a real-world setting?_**
 
-_Resources (i.e. memory)_
+_Resources (i.e. memory), power consumption, mobile data usage, etc. _
 
 ---
 
