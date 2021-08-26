@@ -48,13 +48,14 @@ linear_search(A, key)
 [Linear Search Java](https://github.com/pctablet505/CLRS/blob/532c6f6b32f533115a34065e7b19cec67d5a88c9/Foundations/2%20-%20Getting%20Started/exercises/2.1/LinearSearch.java)
 [Linear Search Python](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/Linear%20Search.py)
 
-## TODO the proof
+# TODO the proof
 
 ---
 ***4. Consider the problem of adding two n-bit binary integers, stored in two n-element arrays A and B. The sum of the
 two integers should be stored in binary form in an (n + 1)-element array C. State the problem formally and write
 pseudocode for adding the two integers.***
 
+#TODO correction in Pseudocode as it is confusing.
 **Pseudo Code**
 
 ```
