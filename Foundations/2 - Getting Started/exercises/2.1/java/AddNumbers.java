@@ -12,7 +12,7 @@ public class AddNumbers {
     public static void main(String[] args) {
        
        /*input binary arrays - initial*/
-       int[] num1 = {1,1,0,1,0,1,0,1}; // 215
+       int[] num1 = {1,1,0,1,0,1,0,1}; // 213
        int[] num2 = {1,0,1,0,0,0,1,1}; // 163
 
        int[] res = new int[num1.length+1];
