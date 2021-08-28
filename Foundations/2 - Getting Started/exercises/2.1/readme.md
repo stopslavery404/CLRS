@@ -79,7 +79,7 @@ pseudocode for adding the two integers.***
 **Pseudo Code**
 
 ```
-def add(a, b):
+add(a, b)
     n = len(a)
     // Initialize a (n+1) bit array
     res = [0] * (n + 1)
