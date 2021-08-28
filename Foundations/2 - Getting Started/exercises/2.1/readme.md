@@ -23,9 +23,9 @@ insertion_sort_reverse(A)
         A[i+1] = key
 ```
 
-[Insertion Sort Descending in Java](https://github.com/pctablet505/CLRS/blob/532c6f6b32f533115a34065e7b19cec67d5a88c9/Foundations/2%20-%20Getting%20Started/exercises/2.1/InsertionSortDescending.java)
+[Java](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/java/InsertionSortDescending.java)
 
-[Insertion Sort Descending in Python](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/Insertion%20Sort%20Descending.py)
+[Python](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/python/Insertion%20Sort%20Descending.py)
 
 
 ---
@@ -45,10 +45,30 @@ linear_search(A, key)
     return Nil
 ```
 
-[Linear Search Java](https://github.com/pctablet505/CLRS/blob/532c6f6b32f533115a34065e7b19cec67d5a88c9/Foundations/2%20-%20Getting%20Started/exercises/2.1/LinearSearch.java)
-[Linear Search Python](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/Linear%20Search.py)
+[Java](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/java/LinearSearch.java)
 
-# TODO the proof
+[Python](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/python/Linear%20Search.py)
+
+### _Proof_
+
+#### Invariant : If we are at i-th element of array, any one of two cases can happen :
+ - a[i] is equal _val_, then simply we found the element no need to check more.
+ - _val_ doesn't exists in a[0..i]
+
+
+**_Initialization: It is true prior to start of the loop_**
+- since, we haven't encountered any elements so far, it is true.
+
+***Maintenance: If it is true before an iteration of the loop, it remains true before the next iteration.***
+- Let's assume invariant is true upto _i-th index_.
+- Case 1 -> **(a[i+1] is equal to _val_)**
+  - then, simply we found the element and we don't need to check more.
+- Case 2 -> **(a[i+1] is not equal to _val_)**
+  - then, we know it is true upto i-th index and a[i+1] != _val_ , thus we conclude that, the invariant is maintained.
+
+***Termination: When the loop terminates, the invariant gives us a useful property that helps show that the algorithm is correct***
+- after the termination of loop ,we can conclude that no element from
+a[0..(a.length-1)] is equal to _val_. hence _val_ doesn't exists in array and simple print some special value. Thus invariant is also maintained here.
 
 ---
 ***4. Consider the problem of adding two n-bit binary integers, stored in two n-element arrays A and B. The sum of the
@@ -78,8 +98,8 @@ def add(a, b):
     return res
 ```
 
-[Add Numbers Java](https://github.com/pctablet505/CLRS/blob/532c6f6b32f533115a34065e7b19cec67d5a88c9/Foundations/2%20-%20Getting%20Started/exercises/2.1/AddNumbers.java)
+[Java](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/java/AddNumbers.java)
 
-[Binary Addition of two n bit integers Python](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/Binary%20Addition%20for%202%20n%20bit%20integers.py)
+[Python](https://github.com/pctablet505/CLRS/blob/master/Foundations/2%20-%20Getting%20Started/exercises/2.1/python/Binary%20Addition%20for%202%20n%20bit%20integers.py)
 
 ---
